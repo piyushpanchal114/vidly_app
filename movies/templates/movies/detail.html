@@ -1,0 +1,14 @@
+{% extends 'movies/base.html' %}
+
+{% block content %}
+
+<h1>{{ movie.title }}</h1>
+<p class="sub-heading">{{ movie.release_year }} &bullet; {{ movie.genre }} &bullet; <span style="color: gold;">&starf;</span> {{ movie.rating }}</p>
+<br>
+<br>
+<p class="description">{{ movie.description }}</p>
+<br>
+<h5>Watch Trailer:</h5>
+<a href="{{ movie.trailer }}">Here</a>
+
+{% endblock %}
